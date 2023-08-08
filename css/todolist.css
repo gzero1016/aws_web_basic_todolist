@@ -3,6 +3,7 @@
     height: 100%;
 }
 
+/* todolist-page-container 클래스중 header를 가지고있는 자식요소 */
 .todolist-page-container > header {
     margin-bottom: 15px;
     border-bottom: 1px solid #dbdbdb;
@@ -15,6 +16,7 @@
 .todolist-main-container {
     padding-right: 5px;
     height: 550px;
+    /* 높이 초과했을 시 스크롤 */
     overflow-y: scroll;
 }
 
@@ -31,6 +33,7 @@
 
 .todolist-items {
     display: flex;
+    /* 첫번째는 왼쪽끝 두번째는 오른쪽 끝에 정렬 */
     justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
@@ -45,6 +48,7 @@
     display: none;
 }
 
+/*  complet-chkboxs 클래스를 가진 첫번째 label 요소를 선택 */
 .complet-chkboxs + label {
     display: flex;
     justify-content: center;
@@ -56,6 +60,7 @@
     cursor: pointer;
 }
 
+/* 위 선택된 label 요소를 선택한 후의 이벤트라 생각하면 쉬움 */
 .complet-chkboxs:checked + label::after {
     content: " ";
     border-radius: 2px;

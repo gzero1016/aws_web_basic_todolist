@@ -45,6 +45,7 @@
     word-wrap: break-word;
 }
 
+/* .modal-main 클래스를 가진 요소의 자식 요소 중에서 마지막 자식 요소를 제외한 모든 자식 요소를 선택 */
 .modal-main > *:not(.modal-main :nth-last-child(1)) {
     margin-bottom: 10px;
 }
@@ -57,6 +58,8 @@
     width: 300px;
 }
 
-.modal-footer .btn:not(.modal-footer :nth-last-child(1)) {
+/* modal-footer 와 btn의 클래스를 가진 요소의 마지막 자식 요소를 제외한 모든 자식 요소를 선택 */
+.modal-footer 
+.btn:not(.modal-footer :nth-last-child(1)) {
     margin-right: 5px;
 }
