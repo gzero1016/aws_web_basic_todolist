@@ -2,7 +2,7 @@
     transition: left 1s ease-in-out;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -200px;
     border-right: 1px solid #dbdbdb;
     width: 200px;
     height: 100%;
